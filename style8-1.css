@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+/* Khối 1 và khối 2 mỗi khối chiếm 1 nửa*/
+.box-1,
+.box-2 {
+    width: 50%;
+}
+
+/*Khối 3 chiếm toàn bộ hàng bên dưới*/
+.box-3 {
+    width: 100%;
+}
+
+/*Giao diện trên điện thoại*/
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }    
+    
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 100%;
+    }
+}
