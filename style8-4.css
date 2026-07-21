@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+/*header*/
+
+header{
+    background: #2d3238;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    text-decoration: none;
+}
+
+/*banner*/
+
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+/*nội dung*/
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    flex: 1;
+    background: #e8e3e3;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 22px;
+}
+
+/*Tablet*/
+
+@media(max-width:768px){
+
+    .content{
+        flex-direction: column;
+    }
+}
