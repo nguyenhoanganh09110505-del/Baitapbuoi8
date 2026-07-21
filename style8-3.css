@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background: rgb(27, 26, 26);
+    padding: 30px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.footer-item{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*responsive cho điện thoại*/
+@media (max-width: 768px){
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item{
+        font-size: 28px;
+    }
+}
