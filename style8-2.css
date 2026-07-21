@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.item {
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*Điện thoại*/
+@media (max-width: 480px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
